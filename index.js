@@ -284,3 +284,12 @@ db.salaryWithPracticeDb.aggregate([
         }
     }
 ])
+
+// Update _id as ObjectId type
+db.additionalInfo.updateOne(
+    { _id: ObjectId("6487a2bf10bf91b129a8d882") },
+    {
+        $set: { userId: new ObjectId("6406ad65fc13ae5a400000c7") }
+    }
+)
+
